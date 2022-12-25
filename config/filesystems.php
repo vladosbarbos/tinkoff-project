@@ -55,6 +55,15 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
         ],
+        'yandex_cloud' => [
+            'driver' => 's3',
+            'key' => env('YANDEX_ACCESS_KEY_ID'),
+            'secret' => env('YANDEX_SECRET_ACCESS_KEY'),
+            'region' => env('YANDEX_DEFAULT_REGION'),
+            'bucket' => env('YANDEX_BUCKET'),
+            'url' => env('YANDEX_URL'),
+            'endpoint' => env('YANDEX_ENDPOINT'),
+        ],
 
     ],
 
