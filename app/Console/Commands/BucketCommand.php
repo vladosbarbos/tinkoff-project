@@ -38,7 +38,7 @@ class BucketCommand extends Command
             KpoLogService::sendWebHook($data);
             var_dump(KpoLogService::log('SEND',['author' => 'Севрюков', 'language' => 'php'], ['author' => 'Костин А', 'language' => 'C#']));
         } else {
-            info('no file');
+            var_dump('no file');
         }
     }
 }
